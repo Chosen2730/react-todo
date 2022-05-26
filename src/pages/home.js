@@ -50,7 +50,7 @@ const Home = () => {
         <div className='todo_header'>
           <div className='header-items'>Time</div>
           <div className='header-items'>Decription</div>
-          <div className='header-items'>Status</div>
+          <div className='header-items status'>Status</div>
         </div>
         <hr className='line' />
         <div className='todos_container'>
@@ -66,7 +66,7 @@ const Home = () => {
         <div className='todo_header'>
           <div className='header-items'>Time</div>
           <div className='header-items'>Decription</div>
-          <div className='header-items'>Status</div>
+          <div className='header-items status'>Status</div>
         </div>
         <hr className='line' />
         <div className='todos_container'>

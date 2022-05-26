@@ -14,7 +14,7 @@ const Todo = ({ time, desc, id }) => {
         <div className='desc single_item'>
           <p>{desc}</p>
         </div>
-        <div className='time single_item'>
+        <div className='time single_item status'>
           <i
             onClick={() => completeHandler(id)}
             className='status_icons complete'

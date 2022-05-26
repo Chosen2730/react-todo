@@ -21,6 +21,7 @@ nav {
   font-size: 2rem;
   color: #242f9b;
   text-transform: uppercase;
+  font-weight: bolder;
 }
 .nav_button {
   padding: 1rem;
@@ -53,7 +54,7 @@ nav {
 .todo_header,
 .single_todo {
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
 }
 .line {
