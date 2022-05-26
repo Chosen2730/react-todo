@@ -1,8 +1,11 @@
 import React from "react";
-import { useGlobalContext } from "../context";
 
 const Error = () => {
-  const { number } = useGlobalContext();
-  return <h1>Error</h1>;
+  return (
+    <div className='error'>
+      <h1>Error</h1>
+      <p>This page does not exist</p>
+    </div>
+  );
 };
 export default Error;

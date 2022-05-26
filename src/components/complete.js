@@ -3,7 +3,7 @@ import { AiFillDelete, AiOutlineCheck } from "react-icons/ai";
 import { useGlobalContext } from "./../context";
 
 const Complete = ({ time, desc, id }) => {
-  const { value, removeItem } = useGlobalContext();
+  const { removeItem } = useGlobalContext();
   return (
     <>
       <div className='single_todo'>

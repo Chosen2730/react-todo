@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/home";
 import Nav from "./components/nav";
-import Login from "./pages/login";
 import Error from "./pages/error";
 import Logout from "./pages/logout";
 function App() {
@@ -12,9 +11,6 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <Home />
-        </Route>
-        <Route path='/login'>
-          <Login />
         </Route>
         <Route path='/logout'>
           <Logout />

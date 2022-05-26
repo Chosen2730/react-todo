@@ -2,7 +2,7 @@ import React from "react";
 import { useGlobalContext } from "./../context";
 
 const Form = () => {
-  const { value, handleSubmit, handleChange, name } = useGlobalContext();
+  const { value, handleSubmit, handleChange } = useGlobalContext();
   return (
     <form action='' onSubmit={handleSubmit}>
       <input
