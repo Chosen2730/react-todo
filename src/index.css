@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+nav {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.nav_header {
+  font-size: 2rem;
+  color: #242f9b;
+  text-transform: uppercase;
+}
+.nav_button {
+  padding: 1rem;
+  border-style: none;
+  background-color: aliceblue;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+.nav_button:hover {
+  background-color: rgb(174, 198, 220);
+  transform: scale(0.9);
+}
+.nav_button button {
+  background: transparent;
+  border-style: none;
+  font-size: 0.75rem;
+}
+.todo {
+  margin: 2rem 0;
+}
+.todo h1 {
+  font-size: 1rem;
+  color: #371b58;
+}
+.today {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.todo_header,
+.single_todo {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  align-items: center;
+}
+.line {
+  border: none;
+  border-bottom: 2px solid #dbdffd;
+  margin: 1rem 0;
+}
+.status_icons {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.single_item h2,
+p {
+  font-size: 1rem;
+}
+.complete {
+  background-color: #354259;
+}
+.complete:hover {
+  background-color: #055b23;
+}
+.complete_success {
+  background-color: #055b23;
+}
+.delete {
+  background-color: #f32424;
+}
+form {
+  display: grid;
+  grid-template-columns: 0.75fr 0.25fr;
+  justify-content: right;
+  width: 100%;
+}
+form input {
+  padding: 0.5rem 1rem;
+  border: 2px solid #242f9b;
+  width: 100%;
+}
+.submit {
+  background-color: #242f9b;
+  color: #fff;
+}
+@media (max-width: 537px) {
+  .desc p,
+  .time-p {
+    font-size: 0.8rem;
+  }
+  .today {
+    grid-template-columns: 1fr;
+  }
+  .today h1 {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  nav {
+    grid-template-columns: 1fr;
+  }
+  .nav_button {
+    display: none;
+  }
+  .nav_header {
+    font-size: 1.5rem;
+  }
+  .status_icons {
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    margin-right: 0.4rem;
+  }
+}
